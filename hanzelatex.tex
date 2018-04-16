@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper]{scrreprt}
+
+% Hanze University guidelines
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+
+\setkomafont{chapter}{\LARGE\normalfont\bfseries}
+\setkomafont{section}{\Large\normalfont\itshape\bfseries}
+\setkomafont{subsection}{\large\normalfont\bfseries}
+\usepackage{lipsum}
+
+\renewcommand{\contentsname}{Inhoudsopgave}
+% \renewcommand{\contentsname}{Table of contents}
+
+% Begin of document
+\begin{document}
+
+% Titel van het document
+\title{Titel document}
+\subtitle{subtitel van het document}
+\author{Auteur Naam}
+\date{1/12/2018}
+\maketitle
+
+\chapter*{Voorwoord}
+\lipsum[1-2]
+
+% Table of contents will get added here
+\tableofcontents
+
+\chapter{Hoofdstuk}
+\lipsum[2-3]
+
+\section{Paragraaf}
+\lipsum[2-3]
+
+\subsection{Subparagraaf}
+\lipsum[1-2]
+
+\end{document}
